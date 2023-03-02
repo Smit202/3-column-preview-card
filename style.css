@@ -1,0 +1,129 @@
+* {
+    background-color: hsl(0, 0%, 95%);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-container {
+    border-radius: 12px;
+    width: 64.3%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+}
+
+.flex-item {
+    width: 33.33%;
+    height: 500px;
+    padding: 50px;
+}
+
+.sedans {
+    border-radius: 12px 0 0 12px;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 12px 12px 0;
+}
+
+h1 {
+    background-color: inherit;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 42px;
+    color: white;
+}
+
+p {
+    background-color: inherit;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    border: 2px solid white;
+    background-color: hsla(0, 0%, 100%, 1.8);
+    width: 145px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 60px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    border: 3px solid hsla(0, 0%, 100%, 1.8);
+    background-color: inherit;
+    color: hsla(0, 0%, 100%, 1.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .flex-container {
+        border-radius: 10px;
+        width: 92%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; */
+        position: relative;
+        top: 620px;
+        left: 190px;
+    }
+    
+    .flex-item {
+        width: 100%;
+        height: 400px;
+        padding: 50px;
+        display: block;
+    }
+
+    button {
+        border: 2px solid white;
+        background-color: hsla(0, 0%, 100%, 1.8);
+        width: 145px;
+        height: 45px;
+        border-radius: 100px;
+        position: relative;
+        top: 10px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: bold;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .space {
+        content: ' ';
+    }
+}
